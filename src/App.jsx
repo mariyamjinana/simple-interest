@@ -92,7 +92,7 @@ function App() {
 
 					</div>
 					<div className="mb-3 d-flex justify-content-between">
-					<Button variant="contained" style={{width:'190px'}} color='success' className='p-3' onClick={calculate}>Calculate</Button>
+					<Button variant="contained" style={{width:'190px'}} color='success' className='p-3' onClick={calculate} disabled={isPrinciple && isRate && isYear ? false :true}>Calculate</Button>
 					<Button variant="outlined" style={{width:'190px'}} className='p-3' onClick={handleReset}>Reset</Button>
 					</div>
 				</div>
